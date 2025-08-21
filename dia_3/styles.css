@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100dvw;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-frame {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+    align-items: center;
+    gap: 2rem;
+}
+
+.book {
+    & a {
+        color: black;
+    }
+    
+    & img {
+        filter: drop-shadow(6px 6px 8px);
+    }
+}
