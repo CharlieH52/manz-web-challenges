@@ -5,9 +5,10 @@
 }
 
 body {
-    height: 100dvh;
+    height: 100%;
     width: 100dvw;
     font-size: 18px;
+    font-family: sans-serif;
 }
 
 ul, ol {
