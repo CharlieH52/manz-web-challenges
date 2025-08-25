@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+}
+
+div {
+    display: flex;
+}
+
+strong {
+    color: blueviolet;
+    animation: ticks 5s linear 0s infinite forwards running;
+}
+
+@keyframes ticks {
+    50% {
+        color: red;
+    }
+    100% {
+        color: blueviolet;
+    }
+}
