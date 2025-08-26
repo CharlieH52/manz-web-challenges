@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.poweroff {
+    display: none;
+}
+
+.tv-margin {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    
+    & .screen-frame {
+        display: flex;
+        margin: auto;
+        width: 480px;
+        height: 480px;
+        border-radius: 24px;
+        clip-path: fill-box;
+        background-color: black;
+        /* pointer-events: none; */
+
+        & iframe {
+            width: 480px;
+            height: 480px;
+        }
+    }
+    
+    & .controls {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: gray;
+        border-radius: 28px;
+        padding: .4rem .8rem;
+        margin: auto;
+        width: clamp(200px, 200px, 35%);
+        gap: .5rem;
+    
+        & .controls-power {
+            background-color: red;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            pointer-events: all;
+        }
+
+        & .controls-next {
+            background-color: aquamarine;
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+            pointer-events: all;
+        }
+        
+        & .controls-prev {
+            background-color: aquamarine;
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+            pointer-events: all;
+        }
+    }
+}
