@@ -1,8 +1,16 @@
 const channels = [
     "https://www.youtube.com/embed/D0LsnT2Iz48",
     "https://www.youtube.com/embed/K6JRiDi96ME",
-    "https://www.youtube.com/embed/6nkeYt_SXzY"
-
+    "https://www.youtube.com/embed/6nkeYt_SXzY",
+    "https://www.youtube.com/embed/R4znx49SLxA",
+    "https://www.youtube.com/embed/Rch039H0SL4",
+    "https://www.youtube.com/embed/AJjJnbGW3OM",
+    "https://www.youtube.com/embed/tWVU7fEeH-8",
+    "https://www.youtube.com/embed/Kqbg1xHZbuw",
+    "https://www.youtube.com/embed/RJYe_uRVJi4",
+    "https://www.youtube.com/embed/xkvQQJzeDmY",
+    "https://www.youtube.com/embed/Mj9A9wYQot8",
+    "https://www.youtube.com/embed/cYoF-NuKanQ"
 ];
 
 let lastChannel = channels[0];
@@ -37,8 +45,8 @@ prevButton.addEventListener("click", function() {
 });
 
 function next_channel() {
-    current_channel = parseInt(channels.indexOf(lastChannel));
-    total_channels = parseInt(channels.length);
+    current_channel = channels.indexOf(lastChannel);
+    total_channels = channels.length;
     if (current_channel + 1 < total_channels) {
         current_channel += 1;
         lastChannel = channels[current_channel];
@@ -48,9 +56,9 @@ function next_channel() {
 }
 
 function prev_channel() {
-    current_channel = parseInt(channels.indexOf(lastChannel));
+    current_channel = channels.indexOf(lastChannel);
     console.log(current_channel);
-    total_channels = parseInt(channels.length);
+    total_channels = channels.length;
     if (current_channel - 1 < 0) {
         lastChannel = channels[total_channels - 1];
     } else {
