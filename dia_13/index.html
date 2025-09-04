@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-frame">
+        <header>
+            <h1>Simulador de venta de boletos</h1>
+        </header>
+        <section class="price-card">
+            <div class="price-label">
+                <p>Precio por boleto:</p>
+                <p id="price-value">0</p>
+            </div>
+            <div class="price-label">
+                <p>Tickets:</p>
+                <p id="tickets-selled">0</p>
+            </div>
+            <div class="price-label">
+                <p>Ganancia:</p>
+                <p id="sells-money">0</p>
+            </div>
+        </section>
+        <section class="progress-section">
+            <p>Progress:</p>
+            <progress class="progress-bar" id="p_bar" value="0" max="10000"></progress>
+            <input type="range" id="input-sell" min="0" max="10000" value="0" step="1">
+        </section>
+    </div>
+</body>
+<script src="progressbar.js"></script>
+</html>
