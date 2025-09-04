@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+    transition: tics 0.2s ease;
+}   
+
+.slider-control {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+    & .slider-input {
+        width: 340px;
+    }
+}
