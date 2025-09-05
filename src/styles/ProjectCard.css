@@ -1,0 +1,33 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(340px, 100%, 75%);
+    filter: drop-shadow(-6px 6px 0 black);
+    
+    & .project-title {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        position: relative;
+        top: 1px;
+        padding: var(--padding-def);
+        width: clamp(300px, 90%, 65%);
+        justify-content: space-between;
+        border-radius: 12px 12px 0 0;
+        background-color: var(--color-sub-background);
+    }
+    
+    & .project-content {
+        max-height: 100px;
+        overflow: hidden;
+        padding: var(--padding-project);
+        border-radius: 0 12px 12px 12px;
+        background-color: var(--color-sub-background);
+        transition: max-height .5s ease;
+    }
+    
+    & .project-content:hover {
+        max-height: 1800px;
+    }
+}
