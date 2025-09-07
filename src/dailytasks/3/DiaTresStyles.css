@@ -1,0 +1,25 @@
+.post-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    & .post-book {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 1rem;
+
+        & a {
+            color: black;
+        }
+    
+        & img {
+            filter: drop-shadow(0 4px 8px);
+        }
+    }
+
+    & .post-text {
+        width: clamp(340px, max-content, max-content);
+    }
+}
