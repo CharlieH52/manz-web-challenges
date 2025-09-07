@@ -1,13 +1,16 @@
 ---
 import '../styles/ProjectCard.css'
-const { title } = Astro.props; 
+const { title, description } = Astro.props; 
 ---
 
 <section class="project-card">
     <header class="project-title">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
     </header>
     <main class="project-content">
+        <header class="project-description">
+            <p>{description}</p>
+        </header>
         <slot />
     </main>
 </section>
